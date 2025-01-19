@@ -16,7 +16,7 @@ import UrbanStudio from "../assets/ImageAndIcons/urbanStudioIMG.png"
 import JesicaFlat from "../assets/ImageAndIcons/jasicaflatIMG.png"
 import SolarCRM from "../assets/ImageAndIcons/solarCRmIMG.png"
 import { useNavigate } from "react-router-dom";
-import BuildYourAwesomePlatforn from "../components/BuildYourAwesomePlatform";
+import BuildYourAwesomePlatform from "../components/BuildYourAwesomePlatform";
 import payIco from "../assets/HomePg_img/paychex.png"
 import strIco from "../assets/HomePg_img/stripe.png"
 import WriteToAs from "../components/HomePg/WriteToAs";
@@ -30,22 +30,37 @@ const HomePg = () => {
         switch (count) {
             case 1:
                 navigate("/petcare_det")
+                window.scrollTo(0, 0);
                 break;
             case 3:
                 navigate("/jassica_det")
+                window.scrollTo(0, 0);
                 break;
 
             case 2:
                 navigate("/urban_det")
+                window.scrollTo(0, 0);
                 break;
             case 4:
                 navigate("/urban2_det")
+                window.scrollTo(0, 0);
                 break;
-
+            case 5:
+                navigate("/about")
+                window.scrollTo(0, 0);
+                break;
             default:
                 break;
         }
     };
+    const homeredirect=(id)=>{
+        if(id==1){
+            window.location.href="#awosomeportfolio"
+        }
+        else if(id==2){
+            window.location.href="#myservices"
+        }
+    }
 
     return (<>
         <div>
@@ -65,7 +80,7 @@ const HomePg = () => {
                     </div>
                     <div className="flex flex-col md:flex-row md:items-center my-4">
                         <div className="flex space-x-4 md:space-x-10">
-                            <button className="text-xs md:text-base font-poppins border border-black hover:bg-[#F9B402] hover:text-white text-black py-2 px-3 md:px-6 rounded-full hover:border-[#F9B402]">
+                            <button onClick={()=>homeredirect(1)} className="text-xs md:text-base font-poppins border border-black hover:bg-[#F9B402] hover:text-white text-black py-2 px-3 md:px-6 rounded-full hover:border-[#F9B402]">
                                 View My Work
                             </button>
                             <button className="text-xs md:text-base font-poppins border border-black hover:bg-[#F9B402] hover:text-white text-black py-2 px-3 md:px-6 rounded-full hover:border-[#F9B402]">
@@ -132,7 +147,7 @@ const HomePg = () => {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            <button className="bg-white text-black py-2 px-8 font-semibold rounded-full flex justify-center items-center ">Our Services <WiDirectionUpRight className="text-2xl" /></button>
+                            <button onClick={()=>homeredirect(2)} className="bg-white text-black py-2 px-8 font-semibold rounded-full flex justify-center items-center ">My Services <WiDirectionUpRight className="text-2xl" /></button>
                         </div>
                     </div>
                 </div>
@@ -148,21 +163,21 @@ const HomePg = () => {
                     {/* text  */}
                     <div className="flex items-center justify-center ">
                         <div className="md:ml-20 text-center md:text-start">
-                            <p className="font-inter text-4xl font-semibold md:mt-32 mt-5">About As</p>
+                            <p className="font-inter text-4xl font-semibold md:mt-32 mt-5">About Me</p>
                             <div className="flex justify-center md:justify-start my-5 md:my-0 ">
                                 <div className="md:w-3/4 w-4/5 ">
                                     <p className="font-poppins md:text-lg text-xs opacity-50">I am a passionate frontend developer and project manager with a knack for creating intuitive and aesthetic web interfaces. With a focus on detail and user experience, I bring projects to life through seamless collaboration and efficient management  I bring projects to life through seamless collaboration and efficient management</p>
                                 </div>
                             </div>
-                            <button className="font-poppins py-2 px-6 rounded-full border m-2 font-semibold border-black">More details</button>
+                            <button onClick={()=>redirect(5)} className="font-poppins py-2 px-6 rounded-full border m-2 font-semibold border-black">More details</button>
                         </div>
                     </div>
                 </div>
 
                 {/* the service provide for you  */}
-                <div className="my-32">
+                <div className="my-32" id="myservices">
                     <div className="flex justify-center">
-                        <p className="font-poppins font-semibold md:text-2xl text-xl my-10">The Service We Provide For You</p>
+                        <p className="font-poppins font-semibold md:text-2xl text-xl my-10">The Service I Can Provide</p>
                     </div>
 
                     <div className="grid gap-10 lg:gap-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -263,7 +278,7 @@ const HomePg = () => {
                     </div>
 
                     {/* Our Awesome Portofolio */}
-                    <div className="flex justify-center my-32 ">
+                    <div className="flex justify-center my-32 " id="awosomeportfolio">
                         <div className="grid gap-10 lg:gap-20">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                                 <div className="w-full h-96 bg-black rounded-xl flex justify-center items-center">
@@ -285,7 +300,7 @@ const HomePg = () => {
                     </div>
 
 
-                    <BuildYourAwesomePlatforn
+                    <BuildYourAwesomePlatform
                         Color="#F9B402"
                     />
 

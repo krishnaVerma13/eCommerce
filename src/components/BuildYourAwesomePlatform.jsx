@@ -1,9 +1,9 @@
 import React from "react";
 
-const BuildYourAwesomePlatforn = ({Color }) => {
+const BuildYourAwesomePlatform = (prop) => {
     return (<>
         <div
-  className={`flex justify-center items-center mx-4 md:mx-10 h-auto md:h-64 bg-[${Color}] shadow-2xl  text-white my-16 md:my-32 p-6 md:p-0`}
+  className={`flex justify-center items-center mx-4 md:mx-10 h-auto md:h-64 bg-[${prop.Color}] shadow-2xl  text-white my-16 md:my-32 p-6 md:p-0`}
 >
   <div className="text-center">
     <p className="text-2xl md:text-4xl mb-4 font-inter">
@@ -30,4 +30,4 @@ const BuildYourAwesomePlatforn = ({Color }) => {
     </>)
 }
 
-export default BuildYourAwesomePlatforn;
+export default BuildYourAwesomePlatform;
