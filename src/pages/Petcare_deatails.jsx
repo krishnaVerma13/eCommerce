@@ -9,7 +9,7 @@ import why_3 from '../assets/PetcareDeatail_Img/Mobile_crop.png'
 import why_4 from '../assets/PetcareDeatail_Img/secure_crop.png'
 import webImg from '../assets/PetcareDeatail_Img/petCare_web.png'
 import AlokSharma from '../assets/PetcareDeatail_Img/AlokSharma.png'
-import Heading from "../components/Project_details/heading";
+import Heading from "../components/Project_details/Heading.jsx";
 import About_Project from "../components/Project_details/About_Project";
 import Contribution from "../components/Project_details/Contribution";
 import BuildYourAwesomePlatforn from "../components/BuildYourAwesomePlatform";

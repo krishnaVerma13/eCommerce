@@ -1,6 +1,6 @@
 import React from "react";
 import logo from '../assets/PetcareDeatail_Img/image_46.png'
-import Heading from "../components/Project_details/heading";
+import Heading from "../components/Project_details/Heading.jsx";
 import About_Project from "../components/Project_details/About_Project";
 import Contribution from "../components/Project_details/Contribution";
 import BuildYourAwesomePlatforn from "../components/BuildYourAwesomePlatform";
