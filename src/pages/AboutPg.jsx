@@ -1,8 +1,6 @@
 import React from "react";
-import Sir_img3 from "../assets/HomePg_img/Naman-img3.png"
-import { IoMdCall } from "react-icons/io";
-import { MdMessage } from "react-icons/md";
-import { Ri24HoursFill } from "react-icons/ri";
+import Sir_img3 from "../assets/HomePg_img/Naman-Img3.png"
+
 import BuildYourAwesomePlatforn from "../components/BuildYourAwesomePlatform";
 import WriteToAs from "../components/HomePg/WriteToAs";
 
